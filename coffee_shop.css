@@ -6,7 +6,10 @@
     --border:.1rem solid rgba(225,225,225,.2)
 }
 *{
-    font-family: 'Roboto', sans-Serif;
+        font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -201,6 +204,12 @@ body{
   filter: blur(5px);
   z-index: 0;
 }
+.blur-bg::before{
+    content: '';
+    
+    background-color: rgba(0, 0, 0, 0.384);
+    height: 100vh;
+}
 .home .content {
   position: relative;
   z-index: 1;
@@ -243,11 +252,11 @@ body{
 .about .row{
     display:flex;
     align-items:center;
-    background:#BE9B7B;
+    background:black;
     flex-wrap:wrap;
 }
 .about .row .image{
-    flex:1 1 45rem;
+    flex:1 1 40rem;
 }
 .about .row .image img{
     width:100%;
@@ -258,10 +267,10 @@ body{
 }
 .about .row .content h3{
     font-size:32px;
-    color:#4A2C2B;
+    color:#685f5f;
+    font-size: 5rem;
    /* color:#6F4E37;*/
    padding:1rem;
-
 }
 .about .row .content p{
     font-size:16px;
@@ -278,7 +287,7 @@ body{
     background-color: transparent;
 }
 .about .row .content .btn:hover{
-    background-color:#EAD1B0;
+    background-color:#ff9100;
 }
 .menu .box-container{
     display:grid;
